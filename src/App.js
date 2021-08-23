@@ -19,6 +19,16 @@ const routes = [
     path: "/humidity",
     component: () => (<div>Humidity</div>),
     label: 'Humidity'
+  },
+  {
+    path: "/Pressure",
+    component: () => (<div>Pressure</div>),
+    label: 'Pressure'
+  },
+  {
+    path: "/Antiometer",
+    component: () => (<div>Antiometer</div>),
+    label: 'Antiometer'
   }
 ]; 
 const useStyles = makeStyles((theme) => ({

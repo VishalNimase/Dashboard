@@ -15,7 +15,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
+//import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import {
     Link
@@ -32,6 +32,16 @@ import {
       path: "/humidity",
       component: () => (<div>Humidity</div>),
       label: 'Humidity'
+    },
+    {
+      path: "/Pressure",
+      component: () => (<div>Pressure</div>),
+      label: 'Pressure'
+    },
+    {
+      path: "/Anemometer",
+      component: () => (<div>Anemometer</div>),
+      label: 'Anemometer'
     }
   ];
 
@@ -134,7 +144,7 @@ export default function MiniDrawer() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-              Dashboard
+          Reverse Engineering Air –Conditioning Test Rig
           </Typography>
         </Toolbar>
       </AppBar>
@@ -160,7 +170,7 @@ export default function MiniDrawer() {
         <List>
           {routes.map((obj, index) => (
             <ListItem component={Link} to={obj.path} button key={obj.label}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+              <ListItemIcon>{index % 2 === 0 ? <link rel="image" href="%PUBLIC_URL%/temp.png" /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={obj.label} />
             </ListItem>
           ))}
