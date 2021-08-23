@@ -15,10 +15,14 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import ExpandLess from '@material-ui/icons/ExpandLess';
+import ExpandMore from '@material-ui/icons/ExpandMore';
+import Collapse from '@material-ui/core/Collapse';
+import StarBorder from '@material-ui/icons/StarBorder';
 import {
-    Link
-  } from 'react-router-dom';
-import {routes } from '../routes';
+  Link
+} from 'react-router-dom';
+import { routes } from '../routes';
 
 const drawerWidth = 240;
 
@@ -99,6 +103,11 @@ export default function MiniDrawer() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+  const [openTemp, setOpenTemp] = React.useState(false);
+
+  const handleClick = () => {
+    setOpenTemp(!openTemp);
+  };
 
   return (
     <div className={classes.root}>
@@ -121,9 +130,9 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          <img className={classes.img} src= {process.env.PUBLIC_URL + '/INDRANEEL_LOGO.png'}  alt="abc"/>
+          <img className={classes.img} src={process.env.PUBLIC_URL + '/INDRANEEL_LOGO.png'} alt="abc" />
           <Typography variant="h6" noWrap>
-          Reverse Engineering Air –Conditioning Test Rig
+            Reverse Engineering Air –Conditioning Test Rig
           </Typography>
         </Toolbar>
       </AppBar>
@@ -147,12 +156,30 @@ export default function MiniDrawer() {
         </div>
         <Divider />
         <List>
-          {routes.map((obj, index) => (
+          {routes.map((obj, index) => ( 
+            obj.nested ?
+            (<>
+              <ListItem button onClick={handleClick}>
+                <ListItemIcon> {obj.icons}</ListItemIcon>
+                <ListItemText primary={obj.label} />
+                {openTemp ? <ExpandLess /> : <ExpandMore />}
+              </ListItem>
+              <Collapse in={openTemp} timeout="auto" unmountOnExit>
+                <List component="div" disablePadding>
+                  {obj.subMenu.map(submenu => (
+                    <ListItem button className={classes.nested} component={Link} to={submenu.path} key={submenu.label}>
+                    <ListItemText primary={submenu.label} />
+                  </ListItem>
+                  ))}
+                </List>
+              </Collapse>
+            </>) : (
             <ListItem component={Link} to={obj.path} button key={obj.label}>
               <ListItemIcon> {obj.icons}</ListItemIcon>
               <ListItemText primary={obj.label} />
             </ListItem>
-          ))}
+            )
+  ))}
         </List>
       </Drawer>
     </div>
