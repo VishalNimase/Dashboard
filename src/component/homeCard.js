@@ -8,18 +8,19 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345
+    width: '29%',
+    height: '27w',
+    marginBottom: '1.5%'
   },
   media: {
     height: 0,
-  paddingTop: '56.25%', // 16:9,
-  marginTop:'30'
+    paddingTop: '80%', // 16:9,
   },
   cardStyle :{
     width: '30%',
     height: '27vw',
     display: 'block',
-    marginBottom: '1%'
+    marginBottom: '1%',
 }
 });
 
@@ -27,7 +28,7 @@ export default function HomeCard({ data}) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.cardStyle}>
+    <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}

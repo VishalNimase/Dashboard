@@ -15,7 +15,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-//import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import {
     Link
@@ -147,7 +146,7 @@ export default function MiniDrawer() {
         <List>
           {routes.map((obj, index) => (
             <ListItem component={Link} to={obj.path} button key={obj.label}>
-              <ListItemIcon>{index % 2 === 0 ? <link rel="image" href="%PUBLIC_URL%/temp.png" /> : <MailIcon />}</ListItemIcon>
+              <ListItemIcon> {obj.icons}</ListItemIcon>
               <ListItemText primary={obj.label} />
             </ListItem>
           ))}
