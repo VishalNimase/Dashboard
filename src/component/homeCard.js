@@ -24,11 +24,11 @@ const useStyles = makeStyles({
 }
 });
 
-export default function HomeCard({ data}) {
+export default function HomeCard({ data, key}) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} key={key} >
       <CardActionArea>
         <CardMedia
           className={classes.media}

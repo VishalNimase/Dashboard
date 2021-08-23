@@ -1,7 +1,7 @@
 import HomeCard from './component/home';
-import Temprature from './component/temrature'
 import AboutUs from './component/AboutUs'
 import ContactUs from './component/ContactUs'
+import LineChart from './component/linechart'
 
 
 
@@ -22,8 +22,8 @@ export const routes = [
       nested: true,
       subMenu: [
         {
-            path: "/t1",
-            component: () => (<div>T1</div>),
+            path: "/temprature/T1SocBs",
+            component: () => (<LineChart />),
             label: 'Suction Of Compresor - BS',
         },
         {

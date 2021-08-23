@@ -18,7 +18,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import Collapse from '@material-ui/core/Collapse';
-import StarBorder from '@material-ui/icons/StarBorder';
 import {
   Link
 } from 'react-router-dom';
@@ -88,7 +87,11 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     height: '50px'
-  }
+  },
+  nested: {
+    paddingLeft: theme.spacing(4),
+    fontSize: '12px'
+  },
 }));
 
 export default function MiniDrawer() {
@@ -103,11 +106,22 @@ export default function MiniDrawer() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
-  const [openTemp, setOpenTemp] = React.useState(false);
+  const [state, setState] = React.useState({
+    Temprature: false,
+    Humidity: false,
+    Pressure: false,
+    anAntiometer: false,
+  });
 
-  const handleClick = () => {
-    setOpenTemp(!openTemp);
+  const handleClick = value => {
+    setState((prevState) => {
+      return({
+        ...prevState,
+        [value]: !prevState[value]
+      });
+    });
   };
+
 
   return (
     <div className={classes.root}>
@@ -159,12 +173,12 @@ export default function MiniDrawer() {
           {routes.map((obj, index) => ( 
             obj.nested ?
             (<>
-              <ListItem button onClick={handleClick}>
+              <ListItem  onClick={() => handleClick(obj.label)}>
                 <ListItemIcon> {obj.icons}</ListItemIcon>
                 <ListItemText primary={obj.label} />
-                {openTemp ? <ExpandLess /> : <ExpandMore />}
+                {state[`${obj.label}`] ? <ExpandLess /> : <ExpandMore />}
               </ListItem>
-              <Collapse in={openTemp} timeout="auto" unmountOnExit>
+              <Collapse in={state[`${obj.label}`]} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                   {obj.subMenu.map(submenu => (
                     <ListItem button className={classes.nested} component={Link} to={submenu.path} key={submenu.label}>

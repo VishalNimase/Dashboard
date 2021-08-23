@@ -12,12 +12,12 @@ const Home = () => {
         <>
         <h1> Main components</h1>
         <div style={styles}>
-            {CardData.map(d => (<HomeCard data={d} />))}
+            {CardData.map(d => (<HomeCard data={d} key={d.title} />))}
             
         </div>
         <h1> Sensors</h1>
         <div style={styles}>
-            {Sensor.map(d => (<HomeCard data={d} />))}
+            {Sensor.map(d => (<HomeCard data={d}  key={d.title}/>))}
             
         </div>
         </>

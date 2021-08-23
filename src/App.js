@@ -7,7 +7,7 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import {routes } from './routes';
+import {routesFinal } from './routesWithSubroutes';
 const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
@@ -33,7 +33,7 @@ function App() {
         <main className={classes.content} >
         <div className={classes.toolbar} />
         <Switch>
-            {routes.map((route, index) => (
+            {routesFinal.map((route, index) => (
               <Route
                 key={index}
                 path={route.path}
