@@ -121,6 +121,7 @@ export default function MiniDrawer() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
+          <img src= {process.env.PUBLIC_URL + '/INDRANEEL_LOGO.png'}  alt="abc"/>
           Reverse Engineering Air –Conditioning Test Rig
           </Typography>
         </Toolbar>
@@ -147,7 +148,7 @@ export default function MiniDrawer() {
         <List>
           {routes.map((obj, index) => (
             <ListItem component={Link} to={obj.path} button key={obj.label}>
-              <ListItemIcon>{index % 2 === 0 ? <link rel="image" href="%PUBLIC_URL%/temp.png" /> : <MailIcon />}</ListItemIcon>
+              <ListItemIcon>{index % 2 === 0 ? <MailIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={obj.label} />
             </ListItem>
           ))}

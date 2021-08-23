@@ -1,9 +1,17 @@
 import HomeCard from './component/home';
 import Temprature from './component/temrature'
+import AboutUs from './component/AboutUs'
+import ContactUs from './component/ContactUs'
 
 
 
 export const routes = [
+  {
+    path: "/",
+    exact: true,
+    component: () => (<HomeCard />),
+    label: 'Home'
+  },
     {
       path: "/temprature",
       exact: true,
@@ -26,9 +34,15 @@ export const routes = [
       label: 'Antiometer'
     },
     {
-      path: "/",
+      path: "/AboutUs",
       exact: true,
-      component: () => (<HomeCard />),
-      label: 'Home'
+      component: () => (<AboutUs />),
+      label: 'About Us'
     },
+    {
+      path: "/ContactUs",
+      exact: true,
+      component: () => (<ContactUs />),
+      label: 'Contact Us'
+    }
   ]; 
