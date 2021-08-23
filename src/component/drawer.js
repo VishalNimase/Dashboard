@@ -15,7 +15,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
 import {
     Link
   } from 'react-router-dom';
@@ -83,6 +82,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     padding: theme.spacing(3),
   },
+  img: {
+    height: '50px'
+  }
 }));
 
 export default function MiniDrawer() {
@@ -119,6 +121,7 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
+          <img className={classes.img} src= {process.env.PUBLIC_URL + '/INDRANEEL_LOGO.png'}  alt="abc"/>
           <Typography variant="h6" noWrap>
           Reverse Engineering Air –Conditioning Test Rig
           </Typography>

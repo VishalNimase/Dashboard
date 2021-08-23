@@ -3,7 +3,6 @@ import { CardData, Sensor } from './images'
 
 const styles = {
     display: 'flex',
-    marginLeft: '80px',
     flexWrap: 'wrap',
     justifyContent: 'space-evenly'
 }
