@@ -20,30 +20,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import {
     Link
   } from 'react-router-dom';
-  
-  const routes = [
-    {
-      path: "/",
-      exact: true,
-      component: () => (<div> Temprature</div>),
-      label:'Temprature'
-    },
-    {
-      path: "/humidity",
-      component: () => (<div>Humidity</div>),
-      label: 'Humidity'
-    },
-    {
-      path: "/Pressure",
-      component: () => (<div>Pressure</div>),
-      label: 'Pressure'
-    },
-    {
-      path: "/Anemometer",
-      component: () => (<div>Anemometer</div>),
-      label: 'Anemometer'
-    }
-  ];
+import {routes } from '../routes';
 
 const drawerWidth = 240;
 

@@ -6,31 +6,8 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Temprature from './component/temrature'
 
-const routes = [
-  {
-    path: "/",
-    exact: true,
-    component: () => (<Temprature />),
-    label:'Temprature'
-  },
-  {
-    path: "/humidity",
-    component: () => (<div>Humidity</div>),
-    label: 'Humidity'
-  },
-  {
-    path: "/Pressure",
-    component: () => (<div>Pressure</div>),
-    label: 'Pressure'
-  },
-  {
-    path: "/Antiometer",
-    component: () => (<div>Antiometer</div>),
-    label: 'Antiometer'
-  }
-]; 
+import {routes } from './routes';
 const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
