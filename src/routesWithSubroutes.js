@@ -14,52 +14,52 @@ export const routesFinal = [
     },
     {
         path: "/temprature/T1SocBs",
-        component: () => (<LineChart name="temp" label="Suction Of Compresor - BS"/>),
+        component: () => (<LineChart name="temp" label="Suction Of Compresor - BlueStar System"/>),
         label: 'Suction Of Compresor - BS',
     },
     {
         path: "/temprature/T2DocBs",
-        component: () => (<LineChart name="temp" label="Discharge Of Compressor - BS"/>),
+        component: () => (<LineChart name="temp" label="Discharge Of Compressor - BlueStar System"/>),
         label: 'Discharge Of Compressor - BS',
     },
     {
         path: "/temprature/T3CocBs",
-        component: () => (<LineChart name="temp" label="Condenser Outlet - BS"/>),
+        component: () => (<LineChart name="temp" label="Condenser Outlet - BlueStar System"/>),
         label: 'Condenser Outlet - BS',
     },
     {
         path: "/temprature/T4EvoBs",
-        component: () => (<LineChart name="temp" label="Expansion Valve Outlet - BS"/>),
+        component: () => (<LineChart name="temp" label="Expansion Valve Outlet - BlueStar System"/>),
         label: 'Expansion Valve Outlet - BS',
     },
     {
         path: "/temprature/t5CaoBs",
-        component: () => (<LineChart name="temp" label="Condenser Air Outlet - BS"/>),
+        component: () => (<LineChart name="temp" label="Condenser Air Outlet - BlueStar System"/>),
         label: 'Condenser Air Outlet - BS',
     },
     {
         path: "/temprature/T6SocDhc",
-        component: () => (<LineChart name="temp" label="Suction Of Compresor - DHC"/>),
+        component: () => (<LineChart name="temp" label="Suction Of Compresor - De-Humidifying Coil System"/>),
         label: 'Suction Of Compresor - DHC',
     },
     {
         path: "/temprature/T7DocDhc",
-        component: () => (<LineChart name="temp" label="Discharge Of Compressor - DHC"/>),
+        component: () => (<LineChart name="temp" label="Discharge Of Compressor - De-Humidifying Coil System"/>),
         label: 'Discharge Of Compressor - DHC',
     },
     {
         path: "/temprature/T8CoDhc",
-        component: () => (<LineChart name="temp" label="Condenser Outlet - DHC"/>),
+        component: () => (<LineChart name="temp" label="Condenser Outlet - De-Humidifying Coil System"/>),
         label: 'Condenser Outlet - DHC',
     },
     {
         path: "/temprature/T9EvoDhc",
-        component: () => (<LineChart name="temp" label="Expansion Valve Outlet - DHC"/>),
+        component: () => (<LineChart name="temp" label="Expansion Valve Outlet - De-Humidifying Coil System"/>),
         label: 'Expansion Valve Outlet - DHC',
     },
     {
         path: "/temprature/T10CaoDhc",
-        component: () => (<LineChart name="temp" label="Condenser Air Outlet - DHC"/>),
+        component: () => (<LineChart name="temp" label="Condenser Air Outlet - De-Humidifying Coil System"/>),
         label: 'Condenser Air Outlet - DHC',
     }, {
         path: "/temprature/T11Ahti",
