@@ -85,31 +85,31 @@ export const routes = [
           label: 'Ambient Air- Ahead Of MD',
         },
         {
-          path: "/DTH2",
+          path: "/humidity/Dht2Ab",
           label: 'After Blower',
         },
         {
-          path: "/DTH3",
+          path: "/humidity/Dht3Ac1",
           label: 'After Cooling Coil 1',
         },
         {
-          path: "/DTH4",
+          path: "/humidity/Dht4Ac2",
           label: 'After Cooling Coil 2',
         },
         {
-          path: "/DTH5",
+          path: "/humidity/Dht5Ac3",
           label: 'After Cooling Coil 3',
         },
         {
-          path: "/DTH6",
+          path: "/humidity/Dht6Ac4",
           label: 'After Cooling Coil 4',
         },
         {
-          path: "/DTH7",
+          path: "/humidity/Dht7Vd",
           label: 'Vertical Duct',
         },
         {
-          path: "/DTH8",
+          path: "/humidity/Dht8Sd",
           label: 'Steamer Duct',
         },
         {

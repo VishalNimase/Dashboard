@@ -27,11 +27,13 @@ export default class LineChart extends React.Component {
       return 'temp'
     } else if (value === 'humidity') {
       return 'humidity'
-    } else if (value === 'danfossPressure') {
+    } else if (value === 'pascal') {
+      return 'pascal'
+    }else if (value === 'danfossPressure') {
       return 'danfossPressure'
     } else if (value === 'anemometer') {
       return 'anemometer'
-    }
+    } 
   }
   componentDidMount() {
 
