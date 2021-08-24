@@ -9,10 +9,12 @@ import {
 
 import {routesFinal } from './routesWithSubroutes';
 const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+  },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
-    marginLeft: '80px'
+    padding: theme.spacing(2),
   },
   toolbar: {
     display: 'flex',
@@ -27,7 +29,7 @@ function App() {
   const classes = useStyles();
   // const theme = useTheme();
   return (
-    <div className="App">
+    <div className={classes.root}>
       <Router>
         <MiniDrawer />
         <main className={classes.content} >
