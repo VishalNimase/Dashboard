@@ -4,7 +4,8 @@ import { CardData, Sensor } from './images'
 const styles = {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'space-evenly'
+    justifyContent: 'space-evenly',
+
 }
 
 const Home = () => {

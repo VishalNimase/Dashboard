@@ -6,21 +6,23 @@ import Contact from './Icons/contactus.png';
 import PressureLogo from './Icons/pressureNew.png';
 import AntioLogo from './Icons/antioTran.png';
 
-
+const style = {
+  height: '35px',
+}
 
 export const routes = [
   {
     path: "/",
     exact: true,
     label: 'Home',
-    icons: (<img style={{ height: '50px' }} src= {homeLogo}  alt="abc"/>),
+    icons: (<img style={style} src= {homeLogo}  alt="abc"/>),
     nested: false,
   },
     {
       path: "/temprature",
       exact: true,
       label:'Temprature',
-      icons: (<img style={{ height: '50px' }} src= {TempLogo}  alt="abc"/>),
+      icons: (<img style={style} src= {TempLogo}  alt="abc"/>),
       nested: true,
       subMenu: [
         {
@@ -75,7 +77,7 @@ export const routes = [
     {
       path: "/humidity",
       label: 'Humidity',
-      icons: (<img style={{ height: '50px' }} src= {HumidityLogo}  alt="abc"/>),
+      icons: (<img style={style} src= {HumidityLogo}  alt="abc"/>),
       nested: true,
       subMenu: [
         {
@@ -123,7 +125,7 @@ export const routes = [
     {
       path: "/Pressure",
       label: 'Pressure',
-      icons: (<img style={{ height: '50px' }} src= {PressureLogo}  alt="abc"/>),
+      icons: (<img style={style} src= {PressureLogo}  alt="abc"/>),
       nested: true,
       subMenu: [
         {
@@ -139,7 +141,7 @@ export const routes = [
     {
       path: "/Antiometer",
       label: 'Antiometer',
-      icons: (<img style={{ height: '50px' }} src= {AntioLogo}  alt="abc"/>),
+      icons: (<img style={style} src= {AntioLogo}  alt="abc"/>),
       nested: true,
       subMenu: [
         {
@@ -154,14 +156,14 @@ export const routes = [
     {
       path: "/AboutUs",
       label: 'About Us',
-      icons: (<img style={{ height: '50px' }} src= {About}  alt="abc"/>),
+      icons: (<img style={style} src= {About}  alt="abc"/>),
       nested: false,
     },
     {
       path: "/ContactUs",
       exact: true,
       label: 'Contact Us',
-      icons: (<img style={{ height: '50px' }} src= {Contact}  alt="abc"/>),
+      icons: (<img style={style} src= {Contact}  alt="abc"/>),
       nested: false,
     }
   ]; 

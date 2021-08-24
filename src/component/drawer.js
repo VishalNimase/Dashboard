@@ -22,6 +22,7 @@ import {
   Link
 } from 'react-router-dom';
 import { routes } from '../routes';
+import './css/drawer.css'
 
 const drawerWidth = 240;
 
@@ -164,6 +165,7 @@ export default function MiniDrawer() {
         }}
       >
         <div className={classes.toolbar}>
+          <span>Close</span>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
@@ -182,7 +184,7 @@ export default function MiniDrawer() {
                 <List component="div" disablePadding>
                   {obj.subMenu.map(submenu => (
                     <ListItem button className={classes.nested} component={Link} to={submenu.path} key={submenu.label}>
-                    <ListItemText primary={submenu.label} />
+                    <ListItemText primary={submenu.label}  className="subMenuLabel"/>
                   </ListItem>
                   ))}
                 </List>

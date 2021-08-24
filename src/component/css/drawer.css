@@ -1,0 +1,6 @@
+.subMenuLabel span{
+        font-size: 0.8rem !important;
+}
+.active {
+    background-color: red;
+}
