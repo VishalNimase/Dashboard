@@ -27,56 +27,56 @@ export const routes = [
             label: 'Suction Of Compresor - BS',
         },
         {
-            path: "/t2",
+            path: "/temprature/T2DocBs",
             component: () => (<div>T2</div>),
             label: 'Discharge Of Compressor - BS',
         },
         {
-          path: "/t3",
+          path: "/temprature/T3CocBs",
           component: () => (<div>T3</div>),
           label: 'Condenser Outlet - BS',
         },
         {
-          path: "/t4",
+          path: "/temprature/T4EvoBs",
           component: () => (<div>T4</div>),
           label: 'Expansion Valve Outlet - BS',
         },
         {
-          path: "/t5",
+          path: "/temprature/t5CaoBs",
           component: () => (<div>T5</div>),
           label: 'Condenser Air Outlet - BS',
         },
         {
-          path: "/t6",
+          path: "/temprature/T6SocDhc",
           component: () => (<div>T6</div>),
           label: 'Suction Of Compresor - DHC',
         },
         {
-        path: "/t7",
+        path: "/temprature/T7DocDhc",
         component: () => (<div>T7</div>),
         label: 'Discharge Of Compressor - DHC',
         },
         {
-        path: "/t8",
+        path: "/temprature/T8CoDhc",
         component: () => (<div>T8</div>),
         label: 'Condenser Outlet - DHC',
         },
         {
-        path: "/t9",
+        path: "/temprature/T9EvoDhc",
         component: () => (<div>T9</div>),
         label: 'Expansion Valve Outlet - DHC',
         },
         {
-          path: "/t10",
+          path: "/temprature/T10CaoDhc",
           component: () => (<div>T10</div>),
           label: 'Condenser Air Outlet - DHC',
         },{
-          path: "/t11",
+          path: "/temprature/T11Ahti",
           component: () => (<div>T11</div>),
           label: 'Air Heater Temp In',
         },
         {
-          path: "/t12",
+          path: "/temprature/T12Ahto",
           component: () => (<div>T12</div>),
           label: 'Air Heater Temp Out',
         }
@@ -147,12 +147,12 @@ export const routes = [
       nested: true,
       subMenu: [
         {
-          path: "/P1",
+          path: "/Pressure/P1Cs",
           component: () => (<div>P1</div>),
           label: 'Condenser Side',
         },
         {
-          path: "/P2",
+          path: "/Pressure/P2Es",
           component: () => (<div>P2</div>),
           label: 'Evaporator Side',
         }
@@ -165,11 +165,11 @@ export const routes = [
       nested: true,
       subMenu: [
         {
-          path: "/A1",
+          path: "/Antiometer/A118",
           component: () => (<div>A1</div>),
           label: '18x18 Duct',
         },{
-          path: "/A2",
+          path: "/Antiometer/A112",
           component: () => (<div>A2</div>),
           label: '12x12 Duct',
         }
