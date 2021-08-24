@@ -73,52 +73,52 @@ export const routesFinal = [
     },
     {
         path: "/DTH1",
-        component: () => (<div>DTH1</div>),
+        component: () => (<LineChart />),
         label: 'Ambient Air- Ahead Of MD',
     },
     {
         path: "/DTH2",
-        component: () => (<div>DTH2</div>),
+        component: () => (<LineChart />),
         label: 'After Blower',
     },
     {
         path: "/DTH3",
-        component: () => (<div>DTH3</div>),
+        component: () => (<LineChart />),
         label: 'After Cooling Coil 1',
     },
     {
         path: "/DTH4",
-        component: () => (<div>DTH4</div>),
+        component: () => (<LineChart />),
         label: 'After Cooling Coil 2',
     },
     {
         path: "/DTH5",
-        component: () => (<div>DTH5</div>),
+        component: () => (<LineChart />),
         label: 'After Cooling Coil 3',
     },
     {
         path: "/DTH6",
-        component: () => (<div>DTH6</div>),
+        component: () => (<LineChart />),
         label: 'After Cooling Coil 4',
     },
     {
         path: "/DTH7",
-        component: () => (<div>DTH7</div>),
+        component: () => (<LineChart />),
         label: 'Vertical Duct',
     },
     {
         path: "/DTH8",
-        component: () => (<div>DTH8</div>),
+        component: () => (<LineChart />),
         label: 'Steamer Duct',
     },
     {
         path: "/DTH9",
-        component: () => (<div>DTH9</div>),
+        component: () => (<LineChart />),
         label: 'Mix of Steam and Air Stream',
     },
     {
         path: "/DTH10",
-        component: () => (<div>DTH10</div>),
+        component: () => (<LineChart />),
         label: 'Exit of Diffuser',
     },
     {
