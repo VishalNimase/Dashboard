@@ -1,4 +1,10 @@
-
+import homeLogo from './Icons/home.png';
+import TempLogo from './Icons/output-onlinepngtools.png';
+import HumidityLogo from './Icons/humidity.png';
+import About from './Icons/aboutus.png';
+import Contact from './Icons/contactus.png';
+import PressureLogo from './Icons/pressureNew.png';
+import AntioLogo from './Icons/antioTran.png';
 
 
 
@@ -7,14 +13,14 @@ export const routes = [
     path: "/",
     exact: true,
     label: 'Home',
-    icons: (<img style={{ height: '50px' }} src= {process.env.PUBLIC_URL + 'home.png'}  alt="abc"/>),
+    icons: (<img style={{ height: '50px' }} src= {homeLogo}  alt="abc"/>),
     nested: false,
   },
     {
       path: "/temprature",
       exact: true,
       label:'Temprature',
-      icons: (<img style={{ height: '50px' }} src= {process.env.PUBLIC_URL + 'output-onlinepngtools.png'}  alt="abc"/>),
+      icons: (<img style={{ height: '50px' }} src= {TempLogo}  alt="abc"/>),
       nested: true,
       subMenu: [
         {
@@ -69,7 +75,7 @@ export const routes = [
     {
       path: "/humidity",
       label: 'Humidity',
-      icons: (<img style={{ height: '50px' }} src= {process.env.PUBLIC_URL + 'humidity.png'}  alt="abc"/>),
+      icons: (<img style={{ height: '50px' }} src= {HumidityLogo}  alt="abc"/>),
       nested: true,
       subMenu: [
         {
@@ -117,7 +123,7 @@ export const routes = [
     {
       path: "/Pressure",
       label: 'Pressure',
-      icons: (<img style={{ height: '50px' }} src= {process.env.PUBLIC_URL + 'pressurenew.png'}  alt="abc"/>),
+      icons: (<img style={{ height: '50px' }} src= {PressureLogo}  alt="abc"/>),
       nested: true,
       subMenu: [
         {
@@ -133,7 +139,7 @@ export const routes = [
     {
       path: "/Antiometer",
       label: 'Antiometer',
-      icons: (<img style={{ height: '50px' }} src= {process.env.PUBLIC_URL + 'antioTran.png'}  alt="abc"/>),
+      icons: (<img style={{ height: '50px' }} src= {AntioLogo}  alt="abc"/>),
       nested: true,
       subMenu: [
         {
@@ -148,14 +154,14 @@ export const routes = [
     {
       path: "/AboutUs",
       label: 'About Us',
-      icons: (<img style={{ height: '50px' }} src= {process.env.PUBLIC_URL + 'aboutus.png'}  alt="abc"/>),
+      icons: (<img style={{ height: '50px' }} src= {About}  alt="abc"/>),
       nested: false,
     },
     {
       path: "/ContactUs",
       exact: true,
       label: 'Contact Us',
-      icons: (<img style={{ height: '50px' }} src= {process.env.PUBLIC_URL + 'contactus.png'}  alt="abc"/>),
+      icons: (<img style={{ height: '50px' }} src= {Contact}  alt="abc"/>),
       nested: false,
     }
   ]; 
