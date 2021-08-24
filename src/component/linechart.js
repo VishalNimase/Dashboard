@@ -44,12 +44,12 @@ export default class LineChart extends React.Component {
         (result) => {
           this.setState({
             ...this.state,
-            labels: result.data.map(d => d.dateTime),
+            labels: result.data.map(d => d.dateTime).reverse(),
             datasets: [
               {
                 ...this.state.datasets[0],
                 label,
-                data: result.data.map(d => d[attr])
+                data: result.data.map(d => d[attr]).reverse()
               }
             ]
           });
