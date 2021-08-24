@@ -22,28 +22,18 @@ export default class LineChart extends React.Component {
       ]
     }
   }
-  getAttribute(value) {
-    if (value === 'temp') {
-      return 'temp'
-    } else if (value === 'humidity') {
-      return 'humidity'
-    } else if (value === 'pascal') {
-      return 'pascal'
-    }else if (value === 'danfossPressure') {
-      return 'danfossPressure'
-    } else if (value === 'anemometer') {
-      return 'anemometer'
-    } 
-  }
   componentDidMount() {
 
     const {attr, label } = getAttribute(this.props.name)
+    console.log(attr, label)
     const tempCode = window.location.href.split('/').pop();
     const URL = `http://148.72.246.96:8081/${tempCode}`
+    console.log(URL)
     axios.get(URL)
       .then(res => res)
       .then(
         (result) => {
+          console.log(' i am here')
           this.setState({
             ...this.state,
             labels: result.data.map(d => d.dateTime).reverse(),

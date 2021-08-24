@@ -80,10 +80,10 @@ export const routes = [
       icons: (<img style={style} src= {HumidityLogo}  alt="abc"/>),
       nested: true,
       subMenu: [
-        {
-          path: "/DTH1",
-          label: 'Ambient Air- Ahead Of MD',
-        },
+        // {
+        //   path: "/DTH1",
+        //   label: 'Ambient Air- Ahead Of MD',
+        // },
         {
           path: "/humidity/Dht2Ab",
           label: 'After Blower',
@@ -112,14 +112,14 @@ export const routes = [
           path: "/humidity/Dht8Sd",
           label: 'Steamer Duct',
         },
-        {
-          path: "/DTH9",
-          label: 'Mix of Steam and Air Stream',
-        },
-        {
-          path: "/DTH10",
-          label: 'Exit of Diffuser',
-        }
+        // {
+        //   path: "/DTH9",
+        //   label: 'Mix of Steam and Air Stream',
+        // },
+        // {
+        //   path: "/DTH10",
+        //   label: 'Exit of Diffuser',
+        // }
       ]
     },
     {
