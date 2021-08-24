@@ -1,6 +1,6 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import axios from 'axios'
+import axios from 'axios';
 
 export default class LineChart extends React.Component {
   // eslint-disable-next-line no-useless-constructor
@@ -21,19 +21,30 @@ export default class LineChart extends React.Component {
       ]
     }
   }
-  componentDidMount() {
-    const config = {
-      headers: { 'Content-Type': 'application/json' },
-      mode: 'no-cors',
-      method: 'GET'
-    };
-    fetch(`http://148.72.246.96:8081/T1SocBs`, config).then(Response => {
-      console.log('testing data', Response)
-    })
+  componentDidMount(){
+    const tempCode = window.location.href.split('/').pop();
+    const URL = `http://148.72.246.96:8081/${tempCode}`
+axios.get(URL)
+      .then(res => res)
+      .then(
+        (result) => {
+          this.setState({
+            ...this.state,
+            labels: result.data.map(d => d.dateTime),
+            datasets: [
+              {
+                ...this.state.datasets[0],
+                data: result.data.map(d => d.temp)
+              }
+            ]
+});
+        },
+        (error) => console.log(error)
+      )
   }
   render() {
     return (
-      <div style={{ height: '300px', width: '500px' }}>
+      <div style={{ height: '500px', width: '800px', margin: 'auto' }}>
         <Line
           data={this.state}
           options={{
