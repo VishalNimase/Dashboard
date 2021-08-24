@@ -1,5 +1,5 @@
 import React from 'react';
-import {Line} from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import axios from 'axios'
 
 export default class LineChart extends React.Component {
@@ -21,37 +21,30 @@ export default class LineChart extends React.Component {
       ]
     }
   }
-  LineChartData(){
-    console.log(' i  am here')
-    axios.get(`http://148.72.246.96:8081/T1SocBs`,{
-      headers: {"Access-Control-Allow-Origin": "*"}
+  componentDidMount() {
+    const config = {
+      headers: { 'Content-Type': 'application/json' },
+      mode: 'no-cors',
+      method: 'GET'
+    };
+    fetch(`http://148.72.246.96:8081/T1SocBs`, config).then(Response => {
+      console.log('testing data', Response)
     })
-      .then(res => {
-        const LineData = res.data.filter(d => d.dateTime);
-        console.log('testing data', LineData)
-        // this.setState({
-        //   ...state,
-
-        //  });
-      })
-  }
-  componentDidMount(){
-    this.LineChartData();
   }
   render() {
     return (
-      <div style={{ height: '300px', width: '500px'}}>
+      <div style={{ height: '300px', width: '500px' }}>
         <Line
           data={this.state}
           options={{
-            title:{
-              display:true,
-              text:'Average Rainfall per month',
-              fontSize:20
+            title: {
+              display: true,
+              text: 'Average Rainfall per month',
+              fontSize: 20
             },
-            legend:{
-              display:true,
-              position:'right'
+            legend: {
+              display: true,
+              position: 'right'
             }
           }}
         />
