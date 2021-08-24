@@ -144,9 +144,9 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          <img className={classes.img} src={process.env.PUBLIC_URL + '/INDRANEEL_LOGO.png'} alt="abc" />
+          <img className={classes.img} src={process.env.PUBLIC_URL + '/INDRANEEL LOGO.png'} alt="abc" />
           <Typography variant="h6" noWrap>
-            Reverse Engineering Air –Conditioning Test Rig
+                 Reverse Engineering Air –Conditioning Test Rig
           </Typography>
         </Toolbar>
       </AppBar>
