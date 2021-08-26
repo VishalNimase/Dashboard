@@ -30,7 +30,7 @@ function App() {
   // const theme = useTheme();
   return (
     <div className={classes.root}>
-      <Router>
+      <Router basename="/">
         <MiniDrawer />
         <main className={classes.content} >
         <div className={classes.toolbar} />
