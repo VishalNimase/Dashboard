@@ -29,7 +29,11 @@ export default class LineChart extends React.Component {
     const tempCode = window.location.href.split('/').pop();
     const URL = `http://148.72.246.96:8081/${tempCode}`
     console.log(URL)
-    axios.get(URL)
+    axios.get(URL,{
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Method": "GET"}
+      })
       .then(res => res)
       .then(
         (result) => {
