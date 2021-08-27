@@ -106,6 +106,12 @@ export default function MiniDrawer() {
 
   const handleDrawerClose = () => {
     setOpen(false);
+    setState({
+      Temprature: false,
+      Humidity: false,
+      Pressure: false,
+      anAntiometer: false,
+    })
   };
   const [state, setState] = React.useState({
     Temprature: false,
@@ -121,6 +127,7 @@ export default function MiniDrawer() {
         [value]: !prevState[value]
       });
     });
+    setOpen(true);
   };
 
 

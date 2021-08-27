@@ -25,19 +25,15 @@ export default class LineChart extends React.Component {
   componentDidMount() {
 
     const {attr, label } = getAttribute(this.props.name)
-    console.log(attr, label)
     const tempCode = window.location.href.split('/').pop();
     const URL = `http://148.72.246.96:8081/${tempCode}`
-    console.log(URL)
     axios.get(URL,{
       headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Method": "GET"}
-      })
+        "Access-Control-Allow-Origin": "*"
+      }})
       .then(res => res)
       .then(
         (result) => {
-          console.log(' i am here')
           this.setState({
             ...this.state,
             labels: result.data.map(d => d.dateTime).reverse(),
