@@ -84,8 +84,8 @@ export const routesFinal = [
         exact: true,
     },
     {
-        path: "/DTH1",
-        component: () => (<LineChart name="" label="Ambient Air- Ahead Of MD"/>),
+        path: "/humidity/Dht1Amd",
+        component: () => (<LineChart name="vapourPressure" label="Ambient Air- Ahead Of MD"/>),
         label: 'Ambient Air- Ahead Of MD',
         exact: true,
     },
@@ -115,7 +115,7 @@ export const routesFinal = [
     },
     {
         path: "/humidity/Dht6Ac4",
-        component: () => (<LineChart name="humidity" label="After Cooling Coil 4"/>),
+        component: () => (<LineChart name="vapourPressure" label="After Cooling Coil 4"/>),
         label: 'After Cooling Coil 4',
         exact: true,
     },
@@ -132,14 +132,14 @@ export const routesFinal = [
         exact: true,
     },
     {
-        path: "/DTH9",
-        component: () => (<LineChart name="" label="Mix of Steam and Air Stream"/>),
+        path: "/humidity/Dht9As",
+        component: () => (<LineChart name="vapourPressure" label="Mix of Steam and Air Stream"/>),
         label: 'Mix of Steam and Air Stream',
         exact: true,
     },
     {
-        path: "/DTH10",
-        component: () => (<LineChart name="" label="Exit of Diffuser"/>),
+        path: "/humidity/Dht10Ed",
+        component: () => (<LineChart name="vapourPressure" label="Exit of Diffuser"/>),
         label: 'Exit of Diffuser',
         exact: true,
     },

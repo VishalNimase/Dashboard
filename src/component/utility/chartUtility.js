@@ -7,7 +7,7 @@ export const getAttribute = value => {
       return { attr: 'danfossPressure', label: 'Pressure' };
     } else if (value === 'anemometer') {
       return { attr: 'anemometer', label: 'Antiometer' };
-    } else if (value === 'pascal') {
-        return {attr: 'pascal', label: 'Pascal' };
+    } else if (value === 'vapourPressure') {
+        return {attr: 'vapourPressure', label: 'Vapour Pressure' };
     }
   }

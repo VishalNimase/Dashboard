@@ -23,7 +23,7 @@ export const CardData =
       description: 'Specifications :, 6 kW Heater, Capacity – 5 Litres, Air Flow – 12 Volt Qty – 2'
     },
     {
-      image: 'Damper.png',
+      image: 'damper.png',
       title: 'Dampers',
       description: 'Specifications :, Damper – Titus Make, Motorised Damper Actuator – Bellineo make, Electrical Data – 24 Volts, 0.5 Amp'
     },
