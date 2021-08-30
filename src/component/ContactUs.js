@@ -3,12 +3,12 @@ import './css/contact.css';
 const ContactUs = () => {
     return (
         <>
-            <h1> Get in  touch</h1>
+            <h1> Get in Touch</h1>
             <div className="ContactusDiv">
                 <div>
                     <h2> CONTACT US</h2>
                     <h2>Indraneel Technologies</h2>
-                    <div>Contact Person: Mr. Umesh Dhamale. </div>
+                    <div>Contact Person: <span className='colorRed'>Mr. Umesh Dhamale.</span> </div>
                     <div>Phone: <span className='colorRed'>9145010803</span></div>
                     <div>Email id: <span className='colorRed'>indraneel.technologies@gmail.com</span> </div>
                 </div>
