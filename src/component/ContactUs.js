@@ -1,18 +1,25 @@
-
+import './css/contact.css';
 
 const ContactUs = () => {
     return (
         <>
-        <h1> Get in  touch</h1>
-        <div>
-            <h2>
-            CONTACT US<br></br></h2>
-            <h2>Indraneel Technologies</h2>
-            <br></br>
-	<h3>Phone: 9145010803</h3>
-	<h3>Email id: indraneel.technologies@gmail.com </h3>
+            <h1> Get in  touch</h1>
+            <div className="ContactusDiv">
+                <div>
+                    <h2> CONTACT US</h2>
+                    <h2>Indraneel Technologies</h2>
+                    <div>Contact Person: Mr. Umesh Dhamale. </div>
+                    <div>Phone: <span className='colorRed'>9145010803</span></div>
+                    <div>Email id: <span className='colorRed'>indraneel.technologies@gmail.com</span> </div>
+                </div>
+                <div>
+                    <h2 className='displayHidden'>.</h2>
+                    <h2> Location</h2>
+                    <div className='colorRed'>Chandraneel Sr. No. 79. Chaitraban. Near Famous Chowk.</div>
+                    <div className='colorRed'>New Sangavi Pune 411027. State : Maharashtra. Country : India</div>
+                </div>
 
-        </div>
+            </div>
         </>
     );
 }

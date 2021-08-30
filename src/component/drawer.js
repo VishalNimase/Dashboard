@@ -24,7 +24,7 @@ import {
 import { routes } from '../routes';
 import './css/drawer.css'
 
-const drawerWidth = 240;
+const drawerWidth = 340;
 
 const useStyles = makeStyles((theme) => ({
   root: {

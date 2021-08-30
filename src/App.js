@@ -6,6 +6,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
+import Footer from './component/footer'
 
 import {routesFinal } from './routesWithSubroutes';
 const useStyles = makeStyles((theme) => ({
@@ -15,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(2),
+    marginBottom: '4%'
   },
   toolbar: {
     display: 'flex',
@@ -44,6 +46,7 @@ function App() {
               />
             ))}
           </Switch>
+          <Footer />
         </main>
       </Router>
     </div>

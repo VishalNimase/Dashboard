@@ -1,0 +1,14 @@
+.ContactusDiv{
+    display: flex;
+    justify-content: flex-start;
+}
+.ContactusDiv div{
+    font-size: 18px;
+    margin-right: 2rem
+}
+.colorRed {
+    color:red;
+}
+.displayHidden{
+    visibility: hidden;
+}
