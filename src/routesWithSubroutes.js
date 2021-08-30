@@ -14,7 +14,7 @@ export const routesFinal = [
     },
     {
         path: "/temprature/T1SocBs",
-        component: () => (<LineChart name="temp" label="Suction Of Compresor - BlueStar System"/>),
+        component: () => (<LineChart name="temp" label="Suction Of Compressor - BlueStar System"/>),
         label: 'Suction Of Compresor - BS',
         exact: true,
     },
@@ -44,7 +44,7 @@ export const routesFinal = [
     },
     {
         path: "/temprature/T6SocDhc",
-        component: () => (<LineChart name="temp" label="Suction Of Compresor - De-Humidifying Coil System"/>),
+        component: () => (<LineChart name="temp" label="Suction Of Compressor - De-Humidifying Coil System"/>),
         label: 'Suction Of Compresor - DHC',
         exact: true,
     },

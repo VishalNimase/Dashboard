@@ -27,7 +27,7 @@ export const routes = [
       subMenu: [
         {
             path: "/temprature/T1SocBs",
-            label: 'Suction Of Compresor - BS',
+            label: 'Suction Of Compressor - BS',
         },
         {
             path: "/temprature/T2DocBs",
@@ -47,7 +47,7 @@ export const routes = [
         },
         {
           path: "/temprature/T6SocDhc",
-          label: 'Suction Of Compresor - DHC',
+          label: 'Suction Of Compressor - DHC',
         },
         {
         path: "/temprature/T7DocDhc",
@@ -140,7 +140,7 @@ export const routes = [
     },
     {
       path: "/Antiometer",
-      label: 'Antiometer',
+      label: 'Anemometer',
       icons: (<img style={style} src= {AntioLogo}  alt="abc"/>),
       nested: true,
       subMenu: [
