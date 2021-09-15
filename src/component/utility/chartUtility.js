@@ -1,6 +1,6 @@
 export const getAttribute = value => {
     if (value === 'temp') {
-      return { attr: 'temp', label: 'Temprature' };
+      return { attr: 'temp', label: 'temperature' };
     } else if (value === 'humidity') {
       return { attr: 'humidity', label: 'Humidity' };
     } else if (value === 'danfossPressure') {
