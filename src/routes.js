@@ -21,7 +21,7 @@ export const routes = [
     {
       path: "/temprature",
       exact: true,
-      label:'Temprature',
+      label:'Temperature',
       icons: (<img style={style} src= {TempLogo}  alt="abc"/>),
       nested: true,
       subMenu: [
