@@ -33,7 +33,7 @@ export const CardData =
       description: 'Specifications :, Make - Confil'
     },
     {
-      image: '',
+      image: 'IMG-20210923-WA0001.jpg',
       title: 'Air Quality Monitor',
       description: 'Specifications Yet to add'
     }
