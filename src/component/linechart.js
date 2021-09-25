@@ -26,7 +26,10 @@ export default class LineChart extends React.Component {
   }
   componentDidMount() {
 
-    const {attr, label, xaxis, yaxis } = getAttribute(this.props.name)
+    let {attr, label, xaxis, yaxis, yaxis1 } = getAttribute(this.props.name)
+    if(this.props.label === 'Evaporator Side') {
+      yaxis = yaxis1
+    }
     const tempCode = window.location.href.split('/').pop();
     const URL = `http://148.72.246.96:8081/${tempCode}`
     axios.get(URL,{
