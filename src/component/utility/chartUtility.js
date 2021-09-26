@@ -2,7 +2,7 @@ export const getAttribute = value => {
     if (value === 'temp') {
       return { attr: 'temp', label: 'temperature', xaxis: 'Time Stamp', yaxis: 'Temperature in Degree Celsius '};
     } else if (value === 'humidity') {
-      return { attr: 'humidity', label: 'Humidity' };
+      return { attr: 'humidity', label: 'Humidity',xaxis: 'Time Stamp', yaxis: 'Relative Humidity in Percentage ' };
     } else if (value === 'danfossPressure') {
       return { attr: 'danfossPressure', label: 'Pressure', xaxis: 'Time Stamp', yaxis: 'Condenser Pressure in Bar', yaxis1: 'Evaporator Pressure in Bar' };
     } else if (value === 'anemometer') {
