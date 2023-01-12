@@ -203,6 +203,9 @@ export default function MiniDrawer() {
             </ListItem>
             )
   ))}
+           <ListItem component={Link} to={"/temprature/newTempRecords"} button key={""} className={ { position: 'absolute', bottom: 0}}>
+              <ListItemText primary={""} />
+            </ListItem>
         </List>
       </Drawer>
     </div>

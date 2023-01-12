@@ -2,7 +2,7 @@ import HomeCard from './component/home';
 import AboutUs from './component/AboutUs'
 import ContactUs from './component/ContactUs'
 import LineChart from './component/linechart'
-
+import Tempaverage from './component/Temp_average'
 
 
 export const routesFinal = [
@@ -176,6 +176,12 @@ export const routesFinal = [
         path: "/ContactUs",
         component: () => (<ContactUs />),
         label: 'Contact Us',
+        exact: true,
+    },
+    {
+        path: "/temprature/newTempRecords",
+        component: () => (<Tempaverage />),
+        label: '',
         exact: true,
     }
 ];

@@ -9,5 +9,7 @@ export const getAttribute = value => {
       return { attr: 'anemometer', label: 'Anemometer',  xaxis: 'Time Stamp', yaxis: 'Air Velocity in meters/sec' };
     } else if (value === 'vapourPressure') {
         return {attr: 'vapourPressure', label: 'Humidity Ratio',  xaxis: 'Time Stamp', yaxis: 'Humidity Ratio in Kilograms of Water per Kilograms of Dry Air' };
+    } else {
+      return { attr: value, label: 'temperature', xaxis: 'Time Stamp', yaxis: 'Temperature in Degree Celsius '};
     }
   }
