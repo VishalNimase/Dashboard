@@ -3,7 +3,7 @@ import AboutUs from './component/AboutUs'
 import ContactUs from './component/ContactUs'
 import LineChart from './component/linechart'
 import Tempaverage from './component/Temp_average'
-
+import DataTable from './component/datatable'
 
 export const routesFinal = [
     {
@@ -179,9 +179,16 @@ export const routesFinal = [
         exact: true,
     },
     {
-        path: "/temprature/newTempRecords",
+        path: "/temprature/newTemp",
         component: () => (<Tempaverage />),
         label: '',
         exact: true,
-    }
+    },
+    {
+        path: "/temprature/newTempRecords",
+        component: () => (<DataTable />),
+        label: '',
+        exact: true,
+    },
+
 ];
