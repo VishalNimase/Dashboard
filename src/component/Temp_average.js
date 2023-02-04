@@ -4,10 +4,10 @@ import LineChart from './linechart';
 const Tempaverage = () => {
     return (
         <>
-         <LineChart name="temp1" label="T1-Evaporator In"/>
-         <LineChart name="temp2" label="T2-Evaporator Exit"/>
-         <LineChart name="temp3" label="Storage Temperature 1"/>
-         <LineChart name="temp4" label="Storage Temperature 2"/>
+         <LineChart name="temp1" label="T1-Storage Chamber-1"/>
+         <LineChart name="temp2" label="T2-PCM Temperature-2"/>
+         <LineChart name="temp3" label="T3-Evaporator In"/>
+         <LineChart name="temp4" label="T4-Compressor Exit"/>
         </>
     );
 }

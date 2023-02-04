@@ -3,10 +3,10 @@ import { DataGrid } from '@mui/x-data-grid';
 
 const columns = [
   { field: 'dateTime', headerName: 'Date', width: 300 },
-  { field: 'temp1', headerName: 'T1-Evaporator In', width: 200 },
-  { field: 'temp2', headerName: 'T2-Evaporator Exit', width: 200 },
-  { field: 'temp3', headerName: 'Storage Temperature 1', width: 200 },
-  { field: 'temp4', headerName: 'Storage Temperature 1', width: 200 }
+  { field: 'temp1', headerName: 'T1-Storage Chamber-1', width: 200 },
+  { field: 'temp2', headerName: 'T2-PCM Temperature-2', width: 200 },
+  { field: 'temp3', headerName: 'T3-Evaporator In', width: 200 },
+  { field: 'temp4', headerName: 'T4-Compressor Exit', width: 200 }
 ];
 
 
